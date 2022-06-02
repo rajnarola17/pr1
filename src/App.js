@@ -1,7 +1,9 @@
 import logo from './logo.svg';
 import './App.css';
+import Demo from './componet/Demo';
 
 function App() {
+  <Demo/>
   return (
     <div className="App">
       <header className="App-header">
