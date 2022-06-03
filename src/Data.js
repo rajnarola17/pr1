@@ -5,14 +5,6 @@ const Data = () => {
         name: "Amit",
         age: 25
     };
-
-    for (let p in person) {
-        console.log(person[p]);
-    };
-    
-
-    // -----------------------------
-
     const person1 = [
         {
             name: "Amit",
@@ -24,13 +16,6 @@ const Data = () => {
         },
     ];
 
-    person1.forEach(p => {
-        console.log(p.name);
-        console.log(p.age);
-    });
-
-    // -----------------------------
-
     const person2 = {
         name: "Amit",
         age: 25,
@@ -39,19 +24,7 @@ const Data = () => {
             "HTML"
         ]
     };
-
-    for (let p in person2) {
-        if (p === "course") {
-            person2[p].forEach(v => {
-                console.log(v);
-            });
-        } else {
-            console.log(person2[p]);
-        };
-    };
-
-    // -----------------------------
-
+   
     const person3 = [
         {
             name: "Amit",
@@ -64,16 +37,7 @@ const Data = () => {
             course: ["Java", "JavaScript"]
         }
     ];
-
-    person3.forEach(p => {
-        console.log(p.name, p.age);
-        p.course.forEach((p1) => {
-            console.log(p1);
-        })
-    });
-
-    // -----------------------------
-
+    
     const myObj = {
         name: "John",
         age: 30,
@@ -83,20 +47,7 @@ const Data = () => {
             car3: "Fiat"
         }
     };
-
-    for (let k in myObj) {
-
-        if (k === "cars") {
-            for (let k1 in myObj[k]) {
-                console.log(myObj[k][k1]);
-            }
-        } else {
-            console.log(myObj[k]);
-        }
-    }
-
-    // -----------------------------
-
+   
     const data = {
         personal_info: {
             name: 'amit',
@@ -123,7 +74,43 @@ const Data = () => {
             }
         }
     }
+    
 
+    for (let p in person) {
+        console.log(person[p]);
+    };
+    console.log(person.age,person.name);
+
+    person1.forEach(p => {
+        console.log(p.name);
+        console.log(p.age);
+    });
+
+    for (let p in person2) {
+        if (p === "course") {
+            person2[p].forEach(v => {
+                console.log(v);
+            });
+        } else {
+            console.log(person2[p]);
+        };
+    };
+    person3.forEach(p => {
+        console.log(p.name, p.age);
+        p.course.forEach((p1) => {
+            console.log(p1);
+        })
+    });
+    for (let k in myObj) {
+
+        if (k === "cars") {
+            for (let k1 in myObj[k]) {
+                console.log(myObj[k][k1]);
+            }
+        } else {
+            console.log(myObj[k]);
+        }
+    }
     for (let d in data) {
         if (d === "personal_info") {
             for (let d1 in data[d]) {
@@ -137,8 +124,6 @@ const Data = () => {
             }
         }
     }
-
-
   return (
     <>
 
