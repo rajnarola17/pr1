@@ -1,26 +1,15 @@
 import logo from './logo.svg';
 import './App.css';
 import Demo from './componet/Demo';
+import Data from './Data';
+import Data2 from './Data2';
 
 function App() {
-  <Demo/>
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          np
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+     {/* <Data /> */}
+     <Data2 />
+      <Demo />
     </div>
   );
 }
