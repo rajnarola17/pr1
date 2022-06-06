@@ -5,6 +5,7 @@ import Data from './Data';
 import Data2 from './Data2';
 import Country from './container/Country';
 import CountryFun from './container/CountryFun';
+import Lifecycle from './container/time/Lifecycle';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Demo />
       <Country name="raj" id="17"/>
       <CountryFun name="mansi" id="11"/>
+      <Lifecycle />
      </div>
   );
 }
