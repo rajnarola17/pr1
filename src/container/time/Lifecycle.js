@@ -7,11 +7,27 @@ class lifecycle extends Component {
             time: new Date()
         }
     }
-    
+    tick=()=>{
+        this.setState({
+            time: new Date()
+        });
+    }
+    componentDidMount=()=>{
+        this.timei=setInterval(()=>this.tick(),1000);
+    }
+    componentDidUpdate=(Prevprops,Prevstate)=>{
+        if(this.state.time !== Prevstate.time){
+            console.log("componentdidupdate")
+        }
+    }
+    componentWillUnmount=()=>{
+        clearInterval(this.timei);
+    }
     render() {
         return (
             <div>
-                <p>{this.state.time.toLocaleTimeString()}</p>
+                <h1>classbase lifecycle</h1>
+                <h4>{this.state.time.toLocaleTimeString()}</h4>
             </div>
         );
     }
