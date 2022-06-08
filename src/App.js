@@ -7,6 +7,7 @@ import Country from './container/Country';
 import CountryFun from './container/CountryFun';
 import Lifecycle from './container/time/Lifecycle';
 import Lifecyclefun from './container/time/Lifecyclefun';
+import Counter from './container/Counter';
 
 function App() {
   return (
@@ -17,7 +18,8 @@ function App() {
       <Country name="raj" id="17"/>
       <CountryFun name="mansi" id="11"/>
       <Lifecycle />
-      <Lifecyclefun />  
+      <Lifecyclefun /> 
+      <Counter /> 
      </div>
   );
 }
